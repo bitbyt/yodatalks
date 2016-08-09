@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* GENERAL STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@font-face {
+    font-family: 'star_jediregular';
+    src: url('../fonts/starjedi-webfont.woff2') format('woff2'),
+         url('../fonts/starjedi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1.2em;
+}
+
+body {
+  background: #fdfdfd;
+  line-height: 1.625;
+  font-family: "mr-eaves-sans", sans-serif;
+}
+
+h1 {
+  font-family: 'star_jediregular', sans-serif;
+}
+
+h2,h3,h4,h5,h6 {
+  font-family: "mr-eaves-sans", sans-serif;
+}
+
+h3, p, div {
+  text-align: center;
+}
+
+h3 {
+  text-transform: capitalize;
+}
+
+h3 span {
+  text-transform: none;
+}
+
+.img-holder {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.textProcess {
+  margin-top: 2rem;
+}
+
+.loader {
+  display: none;
+}
+
+.loader svg path,
+.loader svg rect {
+  fill: #555;
+}
+
+.modal-img-holder {
+  display: none;
+}

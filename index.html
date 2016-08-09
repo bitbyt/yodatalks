@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Yodatalks</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" media="screen" title="main styles" charset="utf-8">
+    <script src="https://use.typekit.net/spi3oeb.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
+        <h1>Speak like Yoda, you must</h1>
+        <h3>Pointless, admit it, this app is.</h3>
+        <div class="img-holder col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3">
+          <img class="img-responsive" src="https://media.giphy.com/media/EUcKlaja5qQWA/giphy.gif" alt="Yoda" />
+        </div>
+        <div class="form-group">
+          <label for="yodaInput"><h4>Give Yoda something to say:</h4></label>
+          <input id="yodaInput" type="text" class="form-control" placeholder="Do or do not, there is no try.">
+        </div>
+        <button type="button" class="textProcess btn btn-success btn-lg" data-toggle="modal" data-target="#outputModal">Yoda Translate</button><br>
+        <!-- Modal -->
+        <div class="modal fade" id="outputModal" tabindex="-1" role="dialog" aria-labelledby="outputModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="outputModalLabel">Yoda Says:</h4>
+              </div>
+              <div class="modal-body">
+                <div class="row modal-img-holder">
+                  <div class="img-holder col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3">
+                    <img class="img-responsive" src="https://media.giphy.com/media/EUcKlaja5qQWA/giphy.gif" alt="Yoda" />
+                  </div>
+                </div>
+                <h2 id="output"></h2>
+                <div class="loader" title="0">
+                  <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+                  <path opacity="0.2" fill="#000" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+                    s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+                    c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"/>
+                  <path fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+                    C22.32,8.481,24.301,9.057,26.013,10.047z">
+                    <animateTransform attributeType="xml"
+                      attributeName="transform"
+                      type="rotate"
+                      from="0 20 20"
+                      to="360 20 20"
+                      dur="1s"
+                      repeatCount="indefinite"/>
+                    </path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js" charset="utf-8"></script>
+  </body>
+</html>
